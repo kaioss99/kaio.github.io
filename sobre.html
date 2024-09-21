@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        body.dark-mode {
+            background-color: #212529;
+            color: #f8f9fa;
+        }
+
+        header {
+            background-color: #6f42c1; /* Cor roxa */
+        }
+
+        body.dark-mode header {
+            background-color: #5a32a0; /* Cor roxa escura */
+        }
+
+        footer {
+            background-color: #6f42c1; /* Cor roxa */
+            color: white; /* Texto branco no rodapé */
+            padding: 20px 0; /* Padding para o rodapé */
+        }
+
+        body.dark-mode footer {
+            background-color: #5a32a0; /* Cor roxa escura */
+            color: #f8f9fa;
+        }
+
+        .navbar-nav .nav-link {
+            color: white; /* Cor dos links de navegação */
+        }
+
+        body.dark-mode .navbar-nav .nav-link {
+            color: #f8f9fa; /* Cor dos links de navegação no tema escuro */
+        }
+
+        .theme-toggle {
+            background-color: #6f42c1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        body.dark-mode .theme-toggle {
+            background-color: #5a32a0;
+            color: #f8f9fa;
+        }
+
+        main {
+            margin-bottom: 100px; /* Espaço extra abaixo do conteúdo principal */
+        }
+
+        .responsive-image {
+            max-width: 300px; /* Aumentada a largura máxima da imagem */
+            height: auto; /* Altura automática para manter a proporção */
+            margin: 0 10px; /* Espaçamento reduzido entre as imagens */
+        }
+    </style>
+</head>
+<body>
+    <header class="text-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item">
+                        <button class="theme-toggle nav-link" onclick="toggleTheme()">Alternar Tema</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Eu sou um entusiasta de jogos e tecnologia, e minha jornada no mundo dos eSports começou com uma paixão inabalável pelo Counter-Strike: Global Offensive. Quase me tornei um jogador profissional, treinando horas a fio e participando de torneios locais. Essa experiência me ensinou sobre disciplina, trabalho em equipe e a importância da estratégia — habilidades que carrego comigo até hoje.</p>
+            
+            <p>Após essa fase, me aventurei no mundo das vendas, comercializando softwares de terceiros voltados para jogos. Isso me proporcionou um entendimento mais profundo sobre o mercado e o que os jogadores realmente desejam.</p>
+            
+            <p>Atualmente, sou frentista e estou em uma nova jornada, aprendendo sobre desenvolvimento front-end. Estou empolgado para criar interfaces intuitivas e funcionais que melhorem a experiência dos usuários. Além disso, faço lives e quero crescer nesse mundo, compartilhando minha paixão por jogos e interagindo com a comunidade. Acredito que a combinação dessas experiências me tornará um profissional versátil e inovador na área de tecnologia.</p>
+
+            <!-- Imagens lado a lado -->
+            <div class="row mt-4">
+                <div class="col-md-4 text-center">
+                    <a href="https://www.instagram.com/kaiiiaao/" target="_blank">
+                        <img src="img/IMG_4585.jpg" alt="Descrição da Imagem 1" class="responsive-image">
+                    </a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="https://www.instagram.com/kaiiiaao/" target="_blank">
+                        <img src="img/pos2.jpg" alt="Descrição da Imagem 2" class="responsive-image">
+                    </a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="https://www.instagram.com/kaiiiaao/" target="_blank">
+                        <img src="img/posto.jpg" alt="Descrição da Imagem 3" class="responsive-image">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center">
+        <p>Siga-me nas redes sociais:</p>
+        
+        <a href="#" class="mr-2"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/kaio-silva-8141bb32a/" class="mr-2"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/kaiiiaao/" class="mr-2"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitch.tv/z9ezinn"><i class="fab fa-twitch"></i></a>
+        <p class="mt-3">© 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>

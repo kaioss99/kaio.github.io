@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #531c5e; /* Fundo preto */
+    color: #e0e0e0; /* Texto em cinza claro */
+}
+
+.bg-purple {
+    background-color: #5f1981 !important; /* Roxo escuro */
+}
+
+footer {
+    background-color: #4e0980; /* Roxo mais escuro para o rodapé */
+}
+.theme-toggle {
+    background-color: #6f42c1; /* Cor de fundo padrão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    padding: 5px 10px; /* Padding interno */
+    margin-top: 0.2px; /* Margem superior para abaixar o botão */
+}
+

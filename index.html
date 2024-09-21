@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        body.dark-mode {
+            background-color: #212529;
+            color: #f8f9fa;
+        }
+        
+        header {
+            background-color: #6f42c1; /* Cor roxa */
+        }
+
+        body.dark-mode header {
+            background-color: #5a32a0; /* Cor roxa escura */
+        }
+
+        footer {
+            background-color: #6f42c1; /* Cor roxa */
+            color: white; /* Texto branco no rodapé */
+        }
+
+        body.dark-mode footer {
+            background-color: #5a32a0; /* Cor roxa escura */
+            color: #f8f9fa;
+        }
+
+        .navbar-nav .nav-link {
+            color: white; /* Cor dos links de navegação */
+        }
+
+        body.dark-mode .navbar-nav .nav-link {
+            color: #f8f9fa; /* Cor dos links de navegação no tema escuro */
+        }
+
+        .theme-toggle {
+            background-color: #6f42c1; /* Cor de fundo padrão */
+            color: white; /* Cor do texto */
+            border: none; /* Remove a borda */
+            border-radius: 5px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor de mão ao passar o mouse */
+            padding: 5px 10px; /* Padding interno */
+            margin-top: 5px; /* Margem superior para abaixar o botão */
+        }
+
+        body.dark-mode .theme-toggle {
+            background-color: #5a32a0; /* Cor de fundo no modo escuro */
+            color: #f8f9fa; /* Cor do texto no modo escuro */
+        }
+
+        .card {
+            background-color: #fff; /* Fundo das cartas no tema claro */
+            color: #212529; /* Cor do texto nas cartas no tema claro */
+        }
+
+        body.dark-mode .card {
+            background-color: #343a40; /* Fundo das cartas no tema escuro */
+            color: #f8f9fa; /* Cor do texto nas cartas no tema escuro */
+        }
+    </style>
+</head>
+<body>
+    <header class="text-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item">
+                        <button class="theme-toggle nav-link" onclick="toggleTheme()">Alternar Tema</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5 text-center">
+        <h1>Bem-vindo ao meu portfólio!</h1>
+        <p>Explore meus projetos, habilidades e informações de contato.</p>
+
+        <h2 class="mt-5">Meus Projetos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/necum.png" alt="Projeto 1" class="card-img-top project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Site de softwares</h5>
+                        <p class="card-text">Site aonde vendo softwares de trapaças.</p>
+                        <a href="projetos.html#projeto1" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/val.png" alt="Projeto 2" class="card-img-top project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Upo contas em jogos como Valorant e CS2</h5>
+                        <p class="card-text">Se você precisa de uma ajudinha para sair de seu rank pode contar cmg</p>
+                        <a href="projetos.html#projeto2" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/cs.png" alt="Projeto 3" class="card-img-top project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pro player</h5>
+                        <p class="card-text">Stats da época que estava focado em virar profissional no CS:GO</p>
+                        <a href="projetos.html#projeto3" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <p>Siga-me nas redes sociais:</p>
+        
+        <a href="#" class="mr-2"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/kaio-silva-8141bb32a/" class="mr-2"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/kaiiiaao/" class="mr-2"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitch.tv/z9ezinn"><i class="fab fa-twitch"></i></a>
+        <p class="mt-3">© 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
